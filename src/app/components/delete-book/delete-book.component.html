@@ -1,0 +1,31 @@
+<br><br><br>
+<h1 class="text-center">Xóa sách</h1>
+<br>
+<div class="col-md-6 offset-md-3 text-left">
+  <h5>Xóa sách</h5>
+</div>
+<br>
+
+<div class="table col-md-6 offset-md-3">
+  <div>
+    <h6>Tên sách:</h6>
+    <p>{{book?.title}}</p>
+  </div> <br>
+  <div>
+    <h6>Tác giả:</h6>
+    <p>{{book?.author}}</p>
+  </div> <br>
+  <div>
+    <h6>Mô tả:</h6>
+  </div>
+  <p>{{book?.description}}</p>
+</div>
+
+<div class="col-md-2 offset-md-5">
+  <div style="float: left">
+    <a type="button" class="btn btn-outline-danger" (click)="onDelete(book.id)">Xóa sách</a>
+  </div>
+  <div style="float: right">
+    <a type="button" class="btn btn-outline-primary" [routerLink]="'/'">Thoát</a>
+  </div>
+</div>
